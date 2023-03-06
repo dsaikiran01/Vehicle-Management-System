@@ -17,4 +17,11 @@ def table_creation():
 	db.commit()
 	print('SUCCESSFUL')
 	print('TABLES CREATED IN',name1)
-table_creation()   #starting 
+
+#main
+if __name__ == '__main__' :
+	try:
+		table_creation()   #starting 
+	except:
+		print("Error while creating database...\nExiting...")
+#THE END
