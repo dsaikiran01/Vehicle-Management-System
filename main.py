@@ -492,13 +492,13 @@ def home():
 		print('The Function you are in search of doesnot exist or in implementation!')
 print('WELCOME TO''\n''The ELITE BUS TRAVELS')
 		
-home()    #PROGRAM STARTS HERE!!!
+if __name__ == '__main__' :
+	home()
 
-while True:     #reiterating and using functions
-	ch=input('Do you want to continue with other managements? (y/n):')
-	if ch.lower()=='y':
-		home()
-	else:
-		break
-print('Thank You for Visiting!')
-#PROGRAM ENDS HERE!!!
+	while True: 
+		ch=input('Do you want to continue with other managements? (y/n):')
+		if ch.lower()=='y':
+			home()
+		else:
+			break
+	print('Thank You for Visiting!')
